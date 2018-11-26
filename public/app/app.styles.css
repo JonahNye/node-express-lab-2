@@ -1,0 +1,85 @@
+body {
+    background-color: white;
+    background: linear-gradient(
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.9)
+    ), url(Mr-T-Bround.png);
+    background-repeat: repeat;
+    color: #3d1400;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: #f5941d;
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #3d1400;
+}
+
+.banner-img {
+    width: 12vw;
+    height: 15vh;
+}
+
+h1 {
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 55pt;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.tea-span{
+    color: #fff9a1;
+}
+
+.form-container {
+    margin: 6vh 0vw 5vh 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f5941d; */
+}
+
+input {
+ border: 2px solid #3d1400;
+ background-color: #fff9a1;
+ cursor: pointer;
+ text-align: center; 
+}
+
+.add-btn {
+ border: 2px solid #3d1400;
+ background-color: #fff9a1;
+ color: #3d1400;
+ cursor: pointer;
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5941d;
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 2vh 2vw 2vh 2vw;
+    border-radius: 8px;
+}
+
+
+.delete-phrase-btn {
+color: #3d1400;
+margin-top: 10px;
+border: 2px solid #3d1400;
+background-color: #fff9a1;
+cursor: pointer;
+}

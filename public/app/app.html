@@ -1,0 +1,25 @@
+<header>
+  <img class="banner-img" src="../app/Mr-T-Banner-left.jpg">
+    <h1><span class="tea-span">Mr.T's</span> Tea Van</h1>
+  <img class="banner-img" src="../app/Mr-T-Alt.jpg"/>
+</header>
+<section class="form-container">
+ <form ng-submit="$ctrl.addPhrase($ctrl.newPhrase);">
+  <input placeholder="Product" type="text" ng-model="$ctrl.newPhrase.product">
+  <input placeholder="Price" type="text" ng-model="$ctrl.newPhrase.price">
+  <input placeholder="Quantity" type="text" ng-model="$ctrl.newPhrase.quanity">
+  <button class="add-btn">Add Item</button>
+ </form>
+</section>
+
+<section class="cart-container">
+  <section class="item-container" ng-repeat="phrase in $ctrl.listOfPhrases">
+     <label>Product</label>
+     <input class="update-input" ng-blur="$ctrl.updatePhrase(phrase);" ng-model="phrase.product">
+     <Label>Price</Label>
+     <input class="update-input" ng-blur="$ctrl.updatePhrase(phrase);"  ng-model="phrase.price">
+     <Label>Quantity</Label>
+     <input class="update-input" ng-blur="$ctrl.updatePhrase(phrase);"  ng-model ="phrase.quanity">
+     <button class="delete-phrase-btn" ng-click="$ctrl.deletePhrases(phrase.id);">X</button>
+  </section>
+</section>
